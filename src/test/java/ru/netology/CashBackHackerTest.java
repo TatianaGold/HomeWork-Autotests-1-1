@@ -13,4 +13,12 @@ public class CashBackHackerTest {
 
         assertEquals(expected,actual);
     }
+    @Test
+    public void testFailed() {
+        CashBackHacker service = new CashBackHacker();
+        int actual = service.remain(1000);
+        int expected = 0;
+
+        assertEquals(expected,actual);
+    }
 }
